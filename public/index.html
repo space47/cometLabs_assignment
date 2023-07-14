@@ -3,7 +3,7 @@
 <meta charset=utf-8>
 <meta http-equiv=x-ua-compatible content="ie=edge">
 <meta name=viewport content="width=device-width,initial-scale=1">
-<title>E-Comm API</title>
+<title>Comet Lab Assignment using Sphere API</title>
 <style media=screen>
     /*!* Bootstrap v3.3.7 (http://getbootstrap.com)
 * Copyright 2011-2016 Twitter, Inc.
@@ -8397,84 +8397,66 @@
 <div class=container-fluid>
     <div class=row>
         <div class="col-md-12 collection-intro">
-            <h3>E-Comm API</h3>
+            <h3>Comet Lab Assignment Using Sphere API -> Document is created using docgen</h3>
             <p>
         </div>
         <div class=col-md-12>
             <div class=col-md-3>
                 <ul>
-                    <li><strong><a href=#Auth>Auth</a></strong>
+                    <li><strong><a href=#Authentication>Authentication</a></strong>
                         <ul>
-                            <li><a class=endpoint_menu href=#jump-Auth-RegisterUser>Register User</a>
-                            <li><a class=endpoint_menu href=#jump-Auth-LoginUser>Login User</a>
-                            <li><a class=endpoint_menu href=#jump-Auth-VerifyEmail>Verify Email</a>
-                            <li><a class=endpoint_menu href=#jump-Auth-ForgotPassword>Forgot Password</a>
-                            <li><a class=endpoint_menu href=#jump-Auth-ResetPassword>Reset Password</a>
+                            <li><a class=endpoint_menu href=#jump-Authentication-LoginUser>Login User</a>
+                            <li><a class=endpoint_menu href=#jump-Authentication-RegisterUser>Register User</a>
                         </ul>
-                    <li><strong><a href=#User>User</a></strong>
+                    <li><strong><a href=#Questions>Questions</a></strong>
                         <ul>
-                            <li><a class=endpoint_menu href=#jump-User-GetAllUser>Get All User</a>
-                            <li><a class=endpoint_menu href=#jump-User-GetSingleUser>Get Single User</a>
-                            <li><a class=endpoint_menu href=#jump-User-ShowCurrentUser>Show Current User</a>
-                            <li><a class=endpoint_menu href=#jump-User-UpdateUser>Update User</a>
-                            <li><a class=endpoint_menu href=#jump-User-UpdateUserPassword>Update User Password</a>
+                            <li><a class=endpoint_menu href=#jump-Questions-GetAllQuestions>Get All Questions</a>
+                            <li><a class=endpoint_menu href=#jump-Questions-GetOneQuestion>Get One Question</a>
+                            <li><a class=endpoint_menu href=#jump-Questions-AddQuestion>Add Question</a>
+                            <li><a class=endpoint_menu href=#jump-Questions-UpdateQuestion>Update Question</a>
+                            <li><a class=endpoint_menu href=#jump-Questions-DeleteQuestion>Delete Question</a>
                         </ul>
-                    <li><strong><a href=#Products>Products</a></strong>
+                    <li><strong><a href=#TestCases>TestCases</a></strong>
                         <ul>
-                            <li><a class=endpoint_menu href=#jump-Products-GetAllProducts>Get All Products</a>
-                            <li><a class=endpoint_menu href=#jump-Products-GetSingleProduct>Get Single Product</a>
-                            <li><a class=endpoint_menu href=#jump-Products-CreateProduct>Create Product</a>
-                            <li><a class=endpoint_menu href=#jump-Products-UpdateProduct>Update Product</a>
-                            <li><a class=endpoint_menu href=#jump-Products-UploadProductImage>Upload Product Image</a>
-                            <li><a class=endpoint_menu href=#jump-Products-DeleteProduct>Delete Product</a>
+                            <li><a class=endpoint_menu href=#jump-TestCases-GetQuestionTestCases>Get Question
+                                    TestCases</a>
+                            <li><a class=endpoint_menu href=#jump-TestCases-AddTestCase>Add TestCase</a>
+                            <li><a class=endpoint_menu href=#jump-TestCases-DeleteTestCase>Delete TestCase</a>
                         </ul>
-                    <li><strong><a href=#Review>Review</a></strong>
+                    <li><strong><a href=#Evalution>Evalution</a></strong>
                         <ul>
-                            <li><a class=endpoint_menu href=#jump-Review-GetAllReviews>Get All Reviews</a>
-                            <li><a class=endpoint_menu href=#jump-Review-GetProductReview>Get Product Review</a>
-                            <li><a class=endpoint_menu href=#jump-Review-GetSingleReview>Get Single Review</a>
-                            <li><a class=endpoint_menu href=#jump-Review-CreateReview>Create Review</a>
-                            <li><a class=endpoint_menu href=#jump-Review-UpdateReview>Update Review</a>
-                            <li><a class=endpoint_menu href=#jump-Review-DeleteReview>Delete Review</a>
-                        </ul>
-                    <li><strong><a href=#Orders>Orders</a></strong>
-                        <ul>
-                            <li><a class=endpoint_menu href=#jump-Orders-GetAllOrders>Get All Orders</a>
-                            <li><a class=endpoint_menu href=#jump-Orders-GetSingleOrder>Get Single Order</a>
-                            <li><a class=endpoint_menu href=#jump-Orders-UpdateOrder>Update Order</a>
-                            <li><a class=endpoint_menu href=#jump-Orders-CreateOrder>Create Order</a>
-                            <li><a class=endpoint_menu href=#jump-Orders-GetCurrentUserOrder>Get Current User Order</a>
+                            <li><a class=endpoint_menu href=#jump-Evalution-EvaluateSolutionResult>Evaluate Solution
+                                    Result</a>
                         </ul>
                 </ul>
             </div>
             <div class=col-md-9>
                 <div class="panel panel-default">
                     <div class=panel-heading>
-                        <h3 class=panel-title id=Auth>Auth
-                            <span class=badge>5</span>
+                        <h3 class=panel-title id=Authentication>Authentication
+                            <span class=badge>2</span>
                         </h3>
                     </div>
                     <div class=panel-body>
                         <p>
                         <div class=request-item>
-                            <div class=panel-group id=accordion-Auth>
-                                <div class="panel panel-success" id=jump-Auth-RegisterUser>
+                            <div class=panel-group id=accordion-Authentication>
+                                <div class="panel panel-success" id=jump-Authentication-LoginUser>
                                     <div class=panel-heading><small class="pull-right text-muted">raw</small>
-                                        <a class=text-success data-toggle=collapse data-parent=#accordion-Auth
-                                            href=#collapse-Auth-RegisterUser>
+                                        <a class=text-success data-toggle=collapse data-parent=#accordion-Authentication
+                                            href=#collapse-Authentication-LoginUser>
                                             <h4 class=panel-title><span
-                                                    class="glyphicon glyphicon-plus"></span><strong>Register
-                                                    User</strong> &nbsp;|&nbsp;
+                                                    class="glyphicon glyphicon-plus"></span><strong>Login User</strong>
+                                                &nbsp;|&nbsp;
                                                 <strong class="request-method border-success">POST</strong>
                                                 &nbsp;
-                                                https://e-comm-api.vercel.app/api/v1/auth/register
+                                                https://cometlabs-backend-assignment.vercel.app/api/v1/auth/login
                                             </h4>
                                         </a>
                                     </div>
-                                    <div id=collapse-Auth-RegisterUser class="panel-collapse collapse">
+                                    <div id=collapse-Authentication-LoginUser class="panel-collapse collapse">
                                         <div class=panel-body>
                                             <h5 class="label label-primary">Body</h5><span class=resp-prettyprint>{
-                                                &#34;name&#34;:&#34;varnit&#34;,
                                                 &#34;email&#34;:&#34;varnit@gmail.com&#34;,
                                                 &#34;password&#34;:&#34;secret&#34;
                                                 }</span>
@@ -8482,118 +8464,24 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="panel panel-success" id=jump-Auth-LoginUser>
+                                <div class="panel panel-success" id=jump-Authentication-RegisterUser>
                                     <div class=panel-heading><small class="pull-right text-muted">raw</small>
-                                        <a class=text-success data-toggle=collapse data-parent=#accordion-Auth
-                                            href=#collapse-Auth-LoginUser>
+                                        <a class=text-success data-toggle=collapse data-parent=#accordion-Authentication
+                                            href=#collapse-Authentication-RegisterUser>
                                             <h4 class=panel-title><span
-                                                    class="glyphicon glyphicon-plus"></span><strong>Login User</strong>
-                                                &nbsp;|&nbsp;
+                                                    class="glyphicon glyphicon-plus"></span><strong>Register
+                                                    User</strong> &nbsp;|&nbsp;
                                                 <strong class="request-method border-success">POST</strong>
                                                 &nbsp;
-                                                https://e-comm-api.vercel.app/api/v1/auth/login
+                                                https://cometlabs-backend-assignment.vercel.app/api/v1/auth/register
                                             </h4>
                                         </a>
                                     </div>
-                                    <div id=collapse-Auth-LoginUser class="panel-collapse collapse">
+                                    <div id=collapse-Authentication-RegisterUser class="panel-collapse collapse">
                                         <div class=panel-body>
                                             <h5 class="label label-primary">Body</h5><span class=resp-prettyprint>{
-                                                &#34;email&#34;:&#34;rajesh@gmail.com&#34;,
-                                                &#34;password&#34;:&#34;secret&#34;
-                                                }</span>
-                                            <div class=clearfix></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-success" id=jump-Auth-VerifyEmail>
-                                    <div class=panel-heading><small class="pull-right text-muted"></small><a
-                                            class=text-success data-toggle=collapse data-parent=#accordion-Auth
-                                            href=#collapse-Auth-VerifyEmail>
-                                            <h4 class=panel-title><span
-                                                    class="glyphicon glyphicon-plus"></span><strong>Verify
-                                                    Email</strong> &nbsp;|&nbsp;
-                                                <strong class="request-method border-success">POST</strong>
-                                                &nbsp;
-                                                http://localhost:3000/user/verify-email
-                                            </h4>
-                                        </a></div>
-                                    <div id=collapse-Auth-VerifyEmail class="panel-collapse collapse">
-                                        <div class=panel-body>
-                                            <h5 class="label label-info">Query</h5>
-                                            <table class="table table-hover">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Key
-                                                        <th>Value
-                                                        <th>Description
-                                                <tbody>
-                                                    <tr>
-                                                        <td>token
-                                                        <td>" "
-                                                        <td>
-                                                    <tr>
-                                                        <td>email
-                                                        <td>" "
-                                                        <td>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-success" id=jump-Auth-ForgotPassword>
-                                    <div class=panel-heading><small class="pull-right text-muted">raw</small>
-                                        <a class=text-success data-toggle=collapse data-parent=#accordion-Auth
-                                            href=#collapse-Auth-ForgotPassword>
-                                            <h4 class=panel-title><span
-                                                    class="glyphicon glyphicon-plus"></span><strong>Forgot
-                                                    Password</strong> &nbsp;|&nbsp;
-                                                <strong class="request-method border-success">POST</strong>
-                                                &nbsp;
-                                                http://localhost:3000/forgot-password
-                                            </h4>
-                                        </a>
-                                    </div>
-                                    <div id=collapse-Auth-ForgotPassword class="panel-collapse collapse">
-                                        <div class=panel-body>
-                                            <h5 class="label label-primary">Body</h5><span class=resp-prettyprint>{
-                                                &#34;email&#34;:&#34;varnit@gmail.com&#34;
-                                                }</span>
-                                            <div class=clearfix></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-success" id=jump-Auth-ResetPassword>
-                                    <div class=panel-heading><small class="pull-right text-muted">raw</small>
-                                        <a class=text-success data-toggle=collapse data-parent=#accordion-Auth
-                                            href=#collapse-Auth-ResetPassword>
-                                            <h4 class=panel-title><span
-                                                    class="glyphicon glyphicon-plus"></span><strong>Reset
-                                                    Password</strong> &nbsp;|&nbsp;
-                                                <strong class="request-method border-success">POST</strong>
-                                                &nbsp;
-                                                http://localhost:3000/user/reset-password
-                                            </h4>
-                                        </a>
-                                    </div>
-                                    <div id=collapse-Auth-ResetPassword class="panel-collapse collapse">
-                                        <div class=panel-body>
-                                            <h5 class="label label-info">Query</h5>
-                                            <table class="table table-hover">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Key
-                                                        <th>Value
-                                                        <th>Description
-                                                <tbody>
-                                                    <tr>
-                                                        <td>token
-                                                        <td>" "
-                                                        <td>
-                                                    <tr>
-                                                        <td>email
-                                                        <td>" "
-                                                        <td>
-                                            </table>
-                                            <h5 class="label label-primary">Body</h5><span class=resp-prettyprint>{
+                                                &#34;name&#34;:&#34;sekhar&#34;,
+                                                &#34;email&#34;:&#34;sekharsr@gmail.com&#34;,
                                                 &#34;password&#34;:&#34;secret&#34;
                                                 }</span>
                                             <div class=clearfix></div>
@@ -8606,252 +8494,168 @@
                 </div>
                 <div class="panel panel-default">
                     <div class=panel-heading>
-                        <h3 class=panel-title id=User>User
+                        <h3 class=panel-title id=Questions>Questions
                             <span class=badge>5</span>
                         </h3>
                     </div>
                     <div class=panel-body>
                         <p>
                         <div class=request-item>
-                            <div class=panel-group id=accordion-User>
-                                <div class="panel panel-info" id=jump-User-GetAllUser>
+                            <div class=panel-group id=accordion-Questions>
+                                <div class="panel panel-info" id=jump-Questions-GetAllQuestions>
                                     <div class=panel-heading><small class="pull-right text-muted"></small><a
-                                            class=text-info data-toggle=collapse data-parent=#accordion-User
-                                            href=#collapse-User-GetAllUser>
+                                            class=text-info data-toggle=collapse data-parent=#accordion-Questions
+                                            href=#collapse-Questions-GetAllQuestions>
                                             <h4 class=panel-title><span
                                                     class="glyphicon glyphicon-plus"></span><strong>Get All
-                                                    User</strong> &nbsp;|&nbsp;
+                                                    Questions</strong> &nbsp;|&nbsp;
                                                 <strong class="request-method border-info">GET</strong>
                                                 &nbsp;
-                                                https://e-comm-api.vercel.app/api/v1/users
+                                                https://cometlabs-backend-assignment.vercel.app/api/v1/questions
                                             </h4>
                                         </a></div>
-                                    <div id=collapse-User-GetAllUser class="panel-collapse collapse">
+                                    <div id=collapse-Questions-GetAllQuestions class="panel-collapse collapse">
                                         <div class=panel-body></div>
                                     </div>
                                 </div>
-                                <div class="panel panel-info" id=jump-User-GetSingleUser>
+                                <div class="panel panel-info" id=jump-Questions-GetOneQuestion>
                                     <div class=panel-heading><small class="pull-right text-muted"></small><a
-                                            class=text-info data-toggle=collapse data-parent=#accordion-User
-                                            href=#collapse-User-GetSingleUser>
+                                            class=text-info data-toggle=collapse data-parent=#accordion-Questions
+                                            href=#collapse-Questions-GetOneQuestion>
                                             <h4 class=panel-title><span
-                                                    class="glyphicon glyphicon-plus"></span><strong>Get Single
-                                                    User</strong> &nbsp;|&nbsp;
+                                                    class="glyphicon glyphicon-plus"></span><strong>Get One
+                                                    Question</strong> &nbsp;|&nbsp;
                                                 <strong class="request-method border-info">GET</strong>
                                                 &nbsp;
-                                                https://e-comm-api.vercel.app/api/v1/users/:id
+                                                https://cometlabs-backend-assignment.vercel.app/api/v1/questions/117144
                                             </h4>
                                         </a></div>
-                                    <div id=collapse-User-GetSingleUser class="panel-collapse collapse">
-                                        <div class=panel-body>
-                                            <h5 class="label label-info">URL Variables</h5>
-                                            <table class="table table-hover">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Key
-                                                        <th>Value
-                                                        <th>Description
-                                                <tbody>
-                                                    <tr>
-                                                        <td>id
-                                                        <td>
-                                                        <td>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-info" id=jump-User-ShowCurrentUser>
-                                    <div class=panel-heading><small class="pull-right text-muted"></small><a
-                                            class=text-info data-toggle=collapse data-parent=#accordion-User
-                                            href=#collapse-User-ShowCurrentUser>
-                                            <h4 class=panel-title><span
-                                                    class="glyphicon glyphicon-plus"></span><strong>Show Current
-                                                    User</strong> &nbsp;|&nbsp;
-                                                <strong class="request-method border-info">GET</strong>
-                                                &nbsp;
-                                                https://e-comm-api.vercel.app/api/v1/users/showMe
-                                            </h4>
-                                        </a></div>
-                                    <div id=collapse-User-ShowCurrentUser class="panel-collapse collapse">
+                                    <div id=collapse-Questions-GetOneQuestion class="panel-collapse collapse">
                                         <div class=panel-body></div>
                                     </div>
                                 </div>
-                                <div class="panel panel-warning" id=jump-User-UpdateUser>
-                                    <div class=panel-heading><small class="pull-right text-muted"></small><a
-                                            class=text-warning data-toggle=collapse data-parent=#accordion-User
-                                            href=#collapse-User-UpdateUser>
-                                            <h4 class=panel-title><span
-                                                    class="glyphicon glyphicon-plus"></span><strong>Update User</strong>
-                                                &nbsp;|&nbsp;
-                                                <strong class="request-method border-warning">PATCH</strong>
-                                                &nbsp;
-                                                https://e-comm-api.vercel.app/api/v1/users/updateUser
-                                            </h4>
-                                        </a></div>
-                                    <div id=collapse-User-UpdateUser class="panel-collapse collapse">
-                                        <div class=panel-body></div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-warning" id=jump-User-UpdateUserPassword>
-                                    <div class=panel-heading><small class="pull-right text-muted"></small><a
-                                            class=text-warning data-toggle=collapse data-parent=#accordion-User
-                                            href=#collapse-User-UpdateUserPassword>
-                                            <h4 class=panel-title><span
-                                                    class="glyphicon glyphicon-plus"></span><strong>Update User
-                                                    Password</strong> &nbsp;|&nbsp;
-                                                <strong class="request-method border-warning">PATCH</strong>
-                                                &nbsp;
-                                                https://e-comm-api.vercel.app/api/v1/users/updateUserPassword
-                                            </h4>
-                                        </a></div>
-                                    <div id=collapse-User-UpdateUserPassword class="panel-collapse collapse">
-                                        <div class=panel-body></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class=panel-heading>
-                        <h3 class=panel-title id=Products>Products
-                            <span class=badge>6</span>
-                        </h3>
-                    </div>
-                    <div class=panel-body>
-                        <p>
-                        <div class=request-item>
-                            <div class=panel-group id=accordion-Products>
-                                <div class="panel panel-info" id=jump-Products-GetAllProducts>
-                                    <div class=panel-heading><small class="pull-right text-muted"></small><a
-                                            class=text-info data-toggle=collapse data-parent=#accordion-Products
-                                            href=#collapse-Products-GetAllProducts>
-                                            <h4 class=panel-title><span
-                                                    class="glyphicon glyphicon-plus"></span><strong>Get All
-                                                    Products</strong> &nbsp;|&nbsp;
-                                                <strong class="request-method border-info">GET</strong>
-                                                &nbsp;
-                                                https://e-comm-api.vercel.app/api/v1/products
-                                            </h4>
-                                        </a></div>
-                                    <div id=collapse-Products-GetAllProducts class="panel-collapse collapse">
-                                        <div class=panel-body></div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-info" id=jump-Products-GetSingleProduct>
-                                    <div class=panel-heading><small class="pull-right text-muted"></small><a
-                                            class=text-info data-toggle=collapse data-parent=#accordion-Products
-                                            href=#collapse-Products-GetSingleProduct>
-                                            <h4 class=panel-title><span
-                                                    class="glyphicon glyphicon-plus"></span><strong>Get Single
-                                                    Product</strong> &nbsp;|&nbsp;
-                                                <strong class="request-method border-info">GET</strong>
-                                                &nbsp;
-                                                https://e-comm-api.vercel.app/api/v1/products/:id
-                                            </h4>
-                                        </a></div>
-                                    <div id=collapse-Products-GetSingleProduct class="panel-collapse collapse">
-                                        <div class=panel-body>
-                                            <h5 class="label label-info">URL Variables</h5>
-                                            <table class="table table-hover">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Key
-                                                        <th>Value
-                                                        <th>Description
-                                                <tbody>
-                                                    <tr>
-                                                        <td>id
-                                                        <td>
-                                                        <td>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-success" id=jump-Products-CreateProduct>
+                                <div class="panel panel-success" id=jump-Questions-AddQuestion>
                                     <div class=panel-heading><small class="pull-right text-muted">raw</small>
-                                        <a class=text-success data-toggle=collapse data-parent=#accordion-Products
-                                            href=#collapse-Products-CreateProduct>
+                                        <a class=text-success data-toggle=collapse data-parent=#accordion-Questions
+                                            href=#collapse-Questions-AddQuestion>
                                             <h4 class=panel-title><span
-                                                    class="glyphicon glyphicon-plus"></span><strong>Create
-                                                    Product</strong> &nbsp;|&nbsp;
+                                                    class="glyphicon glyphicon-plus"></span><strong>Add
+                                                    Question</strong> &nbsp;|&nbsp;
                                                 <strong class="request-method border-success">POST</strong>
                                                 &nbsp;
-                                                https://e-comm-api.vercel.app/api/v1/products
+                                                https://cometlabs-backend-assignment.vercel.app/api/v1/questions
                                             </h4>
                                         </a>
                                     </div>
-                                    <div id=collapse-Products-CreateProduct class="panel-collapse collapse">
+                                    <div id=collapse-Questions-AddQuestion class="panel-collapse collapse">
                                         <div class=panel-body>
                                             <h5 class="label label-primary">Body</h5><span class=resp-prettyprint>{
-                                                &#34;company&#34;: &#34;liddy&#34;,
-                                                &#34;category&#34;: &#34;kitchen&#34;,
-                                                &#34;description&#34;: &#34;use for chopping&#34;,
-                                                &#34;name&#34;:&#34;knife&#34;
+                                                &#34;name&#34;:&#34;island problem&#34;,
+                                                &#34;body&#34;: &#34;problem is very easy problem to do using matrix and
+                                                backtraking.&#34;,
+                                                &#34;masterjudgeId&#34;: 1001
                                                 }</span>
                                             <div class=clearfix></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="panel panel-warning" id=jump-Products-UpdateProduct>
-                                    <div class=panel-heading><small class="pull-right text-muted"></small><a
-                                            class=text-warning data-toggle=collapse data-parent=#accordion-Products
-                                            href=#collapse-Products-UpdateProduct>
+                                <div class="panel panel-warning" id=jump-Questions-UpdateQuestion>
+                                    <div class=panel-heading><small class="pull-right text-muted">raw</small>
+                                        <a class=text-warning data-toggle=collapse data-parent=#accordion-Questions
+                                            href=#collapse-Questions-UpdateQuestion>
                                             <h4 class=panel-title><span
                                                     class="glyphicon glyphicon-plus"></span><strong>Update
-                                                    Product</strong> &nbsp;|&nbsp;
+                                                    Question</strong> &nbsp;|&nbsp;
                                                 <strong class="request-method border-warning">PATCH</strong>
                                                 &nbsp;
-                                                https://e-comm-api.vercel.app/api/v1/products/:id
+                                                https://cometlabs-backend-assignment.vercel.app/api/v1/questions/117229
                                             </h4>
-                                        </a></div>
-                                    <div id=collapse-Products-UpdateProduct class="panel-collapse collapse">
+                                        </a>
+                                    </div>
+                                    <div id=collapse-Questions-UpdateQuestion class="panel-collapse collapse">
                                         <div class=panel-body>
-                                            <h5 class="label label-info">URL Variables</h5>
-                                            <table class="table table-hover">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Key
-                                                        <th>Value
-                                                        <th>Description
-                                                <tbody>
-                                                    <tr>
-                                                        <td>id
-                                                        <td>
-                                                        <td>
-                                            </table>
+                                            <h5 class="label label-primary">Body</h5><span class=resp-prettyprint>{
+                                                &#34;body&#34;: &#34; problem is very easy problem to do using matrix
+                                                and backtracking.&#34;,
+                                                &#34;masterjudgeId&#34;: 1002
+                                                }</span>
+                                            <div class=clearfix></div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="panel panel-success" id=jump-Products-UploadProductImage>
+                                <div class="panel panel-danger" id=jump-Questions-DeleteQuestion>
                                     <div class=panel-heading><small class="pull-right text-muted"></small><a
-                                            class=text-success data-toggle=collapse data-parent=#accordion-Products
-                                            href=#collapse-Products-UploadProductImage>
+                                            class=text-danger data-toggle=collapse data-parent=#accordion-Questions
+                                            href=#collapse-Questions-DeleteQuestion>
                                             <h4 class=panel-title><span
-                                                    class="glyphicon glyphicon-plus"></span><strong>Upload Product
-                                                    Image</strong> &nbsp;|&nbsp;
-                                                <strong class="request-method border-success">POST</strong>
+                                                    class="glyphicon glyphicon-plus"></span><strong>Delete
+                                                    Question</strong> &nbsp;|&nbsp;
+                                                <strong class="request-method border-danger">DELETE</strong>
                                                 &nbsp;
-                                                https://e-comm-api.vercel.app/api/v1/products/uploadImage
+                                                https://cometlabs-backend-assignment.vercel.app/api/v1/questions/117227
                                             </h4>
                                         </a></div>
-                                    <div id=collapse-Products-UploadProductImage class="panel-collapse collapse">
+                                    <div id=collapse-Questions-DeleteQuestion class="panel-collapse collapse">
                                         <div class=panel-body></div>
                                     </div>
                                 </div>
-                                <div class="panel panel-danger" id=jump-Products-DeleteProduct>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class=panel-heading>
+                        <h3 class=panel-title id=TestCases>TestCases
+                            <span class=badge>3</span>
+                        </h3>
+                    </div>
+                    <div class=panel-body>
+                        <p>
+                        <div class=request-item>
+                            <div class=panel-group id=accordion-TestCases>
+                                <div class="panel panel-info" id=jump-TestCases-GetQuestionTestCases>
                                     <div class=panel-heading><small class="pull-right text-muted"></small><a
-                                            class=text-danger data-toggle=collapse data-parent=#accordion-Products
-                                            href=#collapse-Products-DeleteProduct>
+                                            class=text-info data-toggle=collapse data-parent=#accordion-TestCases
+                                            href=#collapse-TestCases-GetQuestionTestCases>
                                             <h4 class=panel-title><span
-                                                    class="glyphicon glyphicon-plus"></span><strong>Delete
-                                                    Product</strong> &nbsp;|&nbsp;
-                                                <strong class="request-method border-danger">DELETE</strong>
+                                                    class="glyphicon glyphicon-plus"></span><strong>Get Question
+                                                    TestCases</strong> &nbsp;|&nbsp;
+                                                <strong class="request-method border-info">GET</strong>
                                                 &nbsp;
-                                                https://e-comm-api.vercel.app/api/v1/products/:id
+                                                https://cometlabs-backend-assignment.vercel.app/api/v1/testCases/117227
                                             </h4>
                                         </a></div>
-                                    <div id=collapse-Products-DeleteProduct class="panel-collapse collapse">
+                                    <div id=collapse-TestCases-GetQuestionTestCases class="panel-collapse collapse">
+                                        <div class=panel-body></div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-success" id=jump-TestCases-AddTestCase>
+                                    <div class=panel-heading><small class="pull-right text-muted">raw</small>
+                                        <a class=text-success data-toggle=collapse data-parent=#accordion-TestCases
+                                            href=#collapse-TestCases-AddTestCase>
+                                            <h4 class=panel-title><span
+                                                    class="glyphicon glyphicon-plus"></span><strong>Add
+                                                    TestCase</strong> &nbsp;|&nbsp;
+                                                <strong class="request-method border-success">POST</strong>
+                                                &nbsp;
+                                                https://cometlabs-backend-assignment.vercel.app/api/v1/testCases/117227
+                                            </h4>
+                                        </a>
+                                    </div>
+                                    <div id=collapse-TestCases-AddTestCase class="panel-collapse collapse">
+                                        <div class=panel-body>
+                                            <h5 class="label label-primary">Body</h5><span class=resp-prettyprint>{
+                                                &#34;input&#34;: &#34;Input&#34;,
+                                                &#34;output&#34;: &#34;Output&#34;,
+                                                &#34;timelimit&#34;: &#34;5&#34;,
+                                                &#34;judgeId&#34;: &#34;1&#34;
+                                                }</span>
+                                            <div class=clearfix></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-success" id=jump-TestCases-DeleteTestCase>
+                                    <div id=collapse-TestCases-DeleteTestCase class="panel-collapse collapse">
                                         <div class=panel-body>
                                             <h5 class="label label-info">URL Variables</h5>
                                             <table class="table table-hover">
@@ -8866,6 +8670,13 @@
                                                         <td>
                                                         <td>
                                             </table>
+                                            <h5 class="label label-primary">Body</h5><span class=resp-prettyprint>{
+                                                &#34;input&#34;:&#34;Input&#34;,
+                                                &#34;output&#34;:&#34;Output&#34;
+                                                &#34;timelimit&#34;:&#34;5&#34;
+                                                &#34;judgeId&#34;:&#34;1&#34;
+                                                }</span>
+                                            <div class=clearfix></div>
                                         </div>
                                     </div>
                                 </div>
@@ -8875,272 +8686,37 @@
                 </div>
                 <div class="panel panel-default">
                     <div class=panel-heading>
-                        <h3 class=panel-title id=Review>Review
-                            <span class=badge>6</span>
+                        <h3 class=panel-title id=Evalution>Evalution
+                            <span class=badge>1</span>
                         </h3>
                     </div>
                     <div class=panel-body>
                         <p>
                         <div class=request-item>
-                            <div class=panel-group id=accordion-Review>
-                                <div class="panel panel-info" id=jump-Review-GetAllReviews>
-                                    <div class=panel-heading><small class="pull-right text-muted"></small><a
-                                            class=text-info data-toggle=collapse data-parent=#accordion-Review
-                                            href=#collapse-Review-GetAllReviews>
+                            <div class=panel-group id=accordion-Evalution>
+                                <div class="panel panel-success" id=jump-Evalution-EvaluateSolutionResult>
+                                    <div class=panel-heading><small class="pull-right text-muted">raw</small>
+                                        <a class=text-success data-toggle=collapse data-parent=#accordion-Evalution
+                                            href=#collapse-Evalution-EvaluateSolutionResult>
                                             <h4 class=panel-title><span
-                                                    class="glyphicon glyphicon-plus"></span><strong>Get All
-                                                    Reviews</strong> &nbsp;|&nbsp;
-                                                <strong class="request-method border-info">GET</strong>
-                                                &nbsp;
-                                                https://e-comm-api.vercel.app/api/v1/reviews
-                                            </h4>
-                                        </a></div>
-                                    <div id=collapse-Review-GetAllReviews class="panel-collapse collapse">
-                                        <div class=panel-body></div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-info" id=jump-Review-GetProductReview>
-                                    <div class=panel-heading><small class="pull-right text-muted"></small><a
-                                            class=text-info data-toggle=collapse data-parent=#accordion-Review
-                                            href=#collapse-Review-GetProductReview>
-                                            <h4 class=panel-title><span
-                                                    class="glyphicon glyphicon-plus"></span><strong>Get Product
-                                                    Review</strong> &nbsp;|&nbsp;
-                                                <strong class="request-method border-info">GET</strong>
-                                                &nbsp;
-                                                https://e-comm-api.vercel.app/api/v1/products/649ff70f08156ee8808ca0da/reviews
-                                            </h4>
-                                        </a></div>
-                                    <div id=collapse-Review-GetProductReview class="panel-collapse collapse">
-                                        <div class=panel-body></div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-info" id=jump-Review-GetSingleReview>
-                                    <div class=panel-heading><small class="pull-right text-muted"></small><a
-                                            class=text-info data-toggle=collapse data-parent=#accordion-Review
-                                            href=#collapse-Review-GetSingleReview>
-                                            <h4 class=panel-title><span
-                                                    class="glyphicon glyphicon-plus"></span><strong>Get Single
-                                                    Review</strong> &nbsp;|&nbsp;
-                                                <strong class="request-method border-info">GET</strong>
-                                                &nbsp;
-                                                https://e-comm-api.vercel.app/api/v1/reviews/:id
-                                            </h4>
-                                        </a></div>
-                                    <div id=collapse-Review-GetSingleReview class="panel-collapse collapse">
-                                        <div class=panel-body>
-                                            <h5 class="label label-info">URL Variables</h5>
-                                            <table class="table table-hover">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Key
-                                                        <th>Value
-                                                        <th>Description
-                                                <tbody>
-                                                    <tr>
-                                                        <td>id
-                                                        <td>
-                                                        <td>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-success" id=jump-Review-CreateReview>
-                                    <div class=panel-heading><small class="pull-right text-muted"></small><a
-                                            class=text-success data-toggle=collapse data-parent=#accordion-Review
-                                            href=#collapse-Review-CreateReview>
-                                            <h4 class=panel-title><span
-                                                    class="glyphicon glyphicon-plus"></span><strong>Create
-                                                    Review</strong> &nbsp;|&nbsp;
+                                                    class="glyphicon glyphicon-plus"></span><strong>Evaluate Solution
+                                                    Result</strong> &nbsp;|&nbsp;
                                                 <strong class="request-method border-success">POST</strong>
                                                 &nbsp;
-                                                https://e-comm-api.vercel.app/api/v1/reviews
+                                                https://cometlabs-backend-assignment.vercel.app/api/v1/submission/:id
                                             </h4>
-                                        </a></div>
-                                    <div id=collapse-Review-CreateReview class="panel-collapse collapse">
-                                        <div class=panel-body></div>
+                                        </a>
                                     </div>
-                                </div>
-                                <div class="panel panel-warning" id=jump-Review-UpdateReview>
-                                    <div class=panel-heading><small class="pull-right text-muted"></small><a
-                                            class=text-warning data-toggle=collapse data-parent=#accordion-Review
-                                            href=#collapse-Review-UpdateReview>
-                                            <h4 class=panel-title><span
-                                                    class="glyphicon glyphicon-plus"></span><strong>Update
-                                                    Review</strong> &nbsp;|&nbsp;
-                                                <strong class="request-method border-warning">PATCH</strong>
-                                                &nbsp;
-                                                https://e-comm-api.vercel.app/api/v1/reviews/:id
-                                            </h4>
-                                        </a></div>
-                                    <div id=collapse-Review-UpdateReview class="panel-collapse collapse">
+                                    <div id=collapse-Evalution-EvaluateSolutionResult class="panel-collapse collapse">
                                         <div class=panel-body>
-                                            <h5 class="label label-info">URL Variables</h5>
-                                            <table class="table table-hover">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Key
-                                                        <th>Value
-                                                        <th>Description
-                                                <tbody>
-                                                    <tr>
-                                                        <td>id
-                                                        <td>
-                                                        <td>
-                                            </table>
+                                            <h5 class="label label-primary">Body</h5><span class=resp-prettyprint>{
+                                                &#34;problemId&#34;:&#34;117229&#34;
+                                                &#34;compilerId&#34;:&#34;12&#34;
+                                                &#34;source&#34;:&#34;sourcecode&#34;
+                                                
+                                                }</span>
+                                            <div class=clearfix></div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-danger" id=jump-Review-DeleteReview>
-                                    <div class=panel-heading><small class="pull-right text-muted"></small><a
-                                            class=text-danger data-toggle=collapse data-parent=#accordion-Review
-                                            href=#collapse-Review-DeleteReview>
-                                            <h4 class=panel-title><span
-                                                    class="glyphicon glyphicon-plus"></span><strong>Delete
-                                                    Review</strong> &nbsp;|&nbsp;
-                                                <strong class="request-method border-danger">DELETE</strong>
-                                                &nbsp;
-                                                https://e-comm-api.vercel.app/api/v1/reviews/:id
-                                            </h4>
-                                        </a></div>
-                                    <div id=collapse-Review-DeleteReview class="panel-collapse collapse">
-                                        <div class=panel-body>
-                                            <h5 class="label label-info">URL Variables</h5>
-                                            <table class="table table-hover">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Key
-                                                        <th>Value
-                                                        <th>Description
-                                                <tbody>
-                                                    <tr>
-                                                        <td>id
-                                                        <td>
-                                                        <td>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class=panel-heading>
-                        <h3 class=panel-title id=Orders>Orders
-                            <span class=badge>5</span>
-                        </h3>
-                    </div>
-                    <div class=panel-body>
-                        <p>
-                        <div class=request-item>
-                            <div class=panel-group id=accordion-Orders>
-                                <div class="panel panel-info" id=jump-Orders-GetAllOrders>
-                                    <div class=panel-heading><small class="pull-right text-muted"></small><a
-                                            class=text-info data-toggle=collapse data-parent=#accordion-Orders
-                                            href=#collapse-Orders-GetAllOrders>
-                                            <h4 class=panel-title><span
-                                                    class="glyphicon glyphicon-plus"></span><strong>Get All
-                                                    Orders</strong> &nbsp;|&nbsp;
-                                                <strong class="request-method border-info">GET</strong>
-                                                &nbsp;
-                                                https://e-comm-api.vercel.app/api/v1/orders
-                                            </h4>
-                                        </a></div>
-                                    <div id=collapse-Orders-GetAllOrders class="panel-collapse collapse">
-                                        <div class=panel-body></div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-info" id=jump-Orders-GetSingleOrder>
-                                    <div class=panel-heading><small class="pull-right text-muted"></small><a
-                                            class=text-info data-toggle=collapse data-parent=#accordion-Orders
-                                            href=#collapse-Orders-GetSingleOrder>
-                                            <h4 class=panel-title><span
-                                                    class="glyphicon glyphicon-plus"></span><strong>Get Single
-                                                    Order</strong> &nbsp;|&nbsp;
-                                                <strong class="request-method border-info">GET</strong>
-                                                &nbsp;
-                                                https://e-comm-api.vercel.app/api/v1/orders/:id
-                                            </h4>
-                                        </a></div>
-                                    <div id=collapse-Orders-GetSingleOrder class="panel-collapse collapse">
-                                        <div class=panel-body>
-                                            <h5 class="label label-info">URL Variables</h5>
-                                            <table class="table table-hover">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Key
-                                                        <th>Value
-                                                        <th>Description
-                                                <tbody>
-                                                    <tr>
-                                                        <td>id
-                                                        <td>
-                                                        <td>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-warning" id=jump-Orders-UpdateOrder>
-                                    <div class=panel-heading><small class="pull-right text-muted"></small><a
-                                            class=text-warning data-toggle=collapse data-parent=#accordion-Orders
-                                            href=#collapse-Orders-UpdateOrder>
-                                            <h4 class=panel-title><span
-                                                    class="glyphicon glyphicon-plus"></span><strong>Update
-                                                    Order</strong> &nbsp;|&nbsp;
-                                                <strong class="request-method border-warning">PATCH</strong>
-                                                &nbsp;
-                                                https://e-comm-api.vercel.app/api/v1/orders/:id
-                                            </h4>
-                                        </a></div>
-                                    <div id=collapse-Orders-UpdateOrder class="panel-collapse collapse">
-                                        <div class=panel-body>
-                                            <h5 class="label label-info">URL Variables</h5>
-                                            <table class="table table-hover">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Key
-                                                        <th>Value
-                                                        <th>Description
-                                                <tbody>
-                                                    <tr>
-                                                        <td>id
-                                                        <td>
-                                                        <td>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-success" id=jump-Orders-CreateOrder>
-                                    <div class=panel-heading><small class="pull-right text-muted"></small><a
-                                            class=text-success data-toggle=collapse data-parent=#accordion-Orders
-                                            href=#collapse-Orders-CreateOrder>
-                                            <h4 class=panel-title><span
-                                                    class="glyphicon glyphicon-plus"></span><strong>Create
-                                                    Order</strong> &nbsp;|&nbsp;
-                                                <strong class="request-method border-success">POST</strong>
-                                                &nbsp;
-                                                https://e-comm-api.vercel.app/api/v1/orders
-                                            </h4>
-                                        </a></div>
-                                    <div id=collapse-Orders-CreateOrder class="panel-collapse collapse">
-                                        <div class=panel-body></div>
-                                    </div>
-                                </div>
-                                <div class="panel panel-info" id=jump-Orders-GetCurrentUserOrder>
-                                    <div class=panel-heading><small class="pull-right text-muted"></small><a
-                                            class=text-info data-toggle=collapse data-parent=#accordion-Orders
-                                            href=#collapse-Orders-GetCurrentUserOrder>
-                                            <h4 class=panel-title><span
-                                                    class="glyphicon glyphicon-plus"></span><strong>Get Current User
-                                                    Order</strong> &nbsp;|&nbsp;
-                                                <strong class="request-method border-info">GET</strong>
-                                                &nbsp;
-                                                https://e-comm-api.vercel.app/api/v1/orders/showAllMyOrders
-                                            </h4>
-                                        </a></div>
-                                    <div id=collapse-Orders-GetCurrentUserOrder class="panel-collapse collapse">
-                                        <div class=panel-body></div>
                                     </div>
                                 </div>
                             </div>
@@ -9150,13 +8726,13 @@
             </div>
         </div>
     </div>
-<script src = "./browser-app.js"></script>
-        <br><br>
+    <script src = './browser-app.js'></script>
+    <br><br>
     <footer class="navbar-default navbar-fixed-bottom">
         <div class=container-fluid>
             <div class="span12 text-center"><span data-toggle=tooltip
                     title="If the application help you, please feel free to give a star to the project in github. Your star inspire me to work more on open-source projects like this!">Generated
-                    at 2023-07-13 14:59:40 by <a href=https://github.com/thedevsaddam/docgen target=_blank
+                    at 2023-07-14 13:20:07 by <a href=https://github.com/thedevsaddam/docgen target=_blank
                         class=text-muted>docgen</a></span></div>
         </div>
     </footer>
